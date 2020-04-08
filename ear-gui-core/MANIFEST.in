@@ -1,0 +1,11 @@
+include requirements.txt test-requirements.txt dev-requirements.txt
+include tox.ini .bumpversion.cfg
+include LICENSE
+include Dockerfile
+include ear-gui-core.spec
+
+graft etc
+graft tests
+
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]
